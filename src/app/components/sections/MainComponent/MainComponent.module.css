@@ -1,0 +1,73 @@
+.mainTitle {
+  margin-top: 9rem;
+  font-size: 3rem;
+  font-family: Playfair Display;
+  font-weight: 900;
+}
+.mainTitle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -90px;
+  width: 130%;
+  height: 100%;
+  opacity: 0.5;
+  background: url("../../../../../public/background-circle.png") no-repeat;
+}
+.mainTitle span {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.mainText {
+  font-size: 1.3rem;
+
+  margin-top: 9rem;
+  line-height: 3rem;
+}
+.mainText strong {
+  font-weight: 700;
+}
+
+.goStartBtn {
+  font-family: Playfair Display;
+  font-size: 1.1rem;
+  margin: 3rem 0;
+  border: 1px solid var(--foreground);
+  border-radius: 3rem;
+  padding: 20px 30px;
+
+  overflow: hidden;
+  position: relative;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+
+.goStartBtn:after {
+  background-color: var(--foreground);
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.goStartBtn:hover {
+  color: var(--background);
+  cursor: pointer;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+.goStartBtn:hover::after {
+  transform: translate(0, 0);
+}

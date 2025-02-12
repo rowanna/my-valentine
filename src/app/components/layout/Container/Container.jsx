@@ -2,7 +2,7 @@ import styles from "./Container.module.css";
 export default function Container({ children }) {
   return (
     <>
-      <section>
+      <section className={styles.section}>
         <div className={styles.container}>{children}</div>
       </section>
     </>
