@@ -12,8 +12,8 @@ export default function SelectTexturePage() {
           selectData={chocolateTextures}
           nextUrl={"selectShape"}
         >
-          ${selectedType}초콜릿으로 고르셨군요! <br />
-          이제 어떤 질감으로 만들어 선물할건지 생각해봐요.`
+          {selectedType}초콜릿으로 고르셨군요! <br />
+          이제 어떤 질감으로 만들어 선물할건지 생각해봐요.
         </CommonStepComponent>
       </Layout>
     </>

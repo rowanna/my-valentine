@@ -1,4 +1,4 @@
-import Layout from "@/app/components/layout";
+import Layout from "../components/layout/index";
 
 export default function ResultPage() {
   return (
