@@ -1,14 +1,15 @@
 "use client";
 import Layout from "../components/layout/index";
 import { useEffect, useRef, useState } from "react";
-import { notFound } from "next/navigation";
 import styles from "./style.module.css";
 import generateChocolateMessage from "../../lib/generateMessage"; // src/lib 경로로 불러오기
+import { useRouter } from "next/navigation";
 
 export default function ResultPage() {
   const [showLoading, setShowLoading] = useState(false);
   const [resultDesc, setResultDesc] = useState("");
   const LoadingRef = useRef();
+  const router = useRouter();
 
   const handleLoading = () => {
     setShowLoading(() => true);
@@ -33,10 +34,10 @@ export default function ResultPage() {
         handleLoading();
         setResultDesc(() => generateChocolateMessage(parsedData));
       } else {
-        notFound();
+        router.push("/not-found");
       }
     } else {
-      notFound();
+      router.push("/not-found");
     }
   }, []);
   return (
