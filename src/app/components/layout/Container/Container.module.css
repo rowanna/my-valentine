@@ -3,13 +3,13 @@
   overflow: hidden;
 }
 .container {
-  background: var(--background);
+  /* background: var(--background); */
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
 }
 
-/* .container::before {
+.container::before {
   content: "";
   position: absolute;
   top: 13rem;
@@ -17,8 +17,9 @@
   width: 400px;
   height: 400px;
   opacity: 0.5;
+  z-index: -1;
   background: radial-gradient(circle, #fff, #f5e8ed, var(--background));
-} */
+}
 
 .container::after {
   content: "";
@@ -28,6 +29,7 @@
   width: 50%;
   height: 50%;
   opacity: 0.5;
+  z-index: -1;
   background: url("../../../../../public/background-heart.png") no-repeat;
 }
 

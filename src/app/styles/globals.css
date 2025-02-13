@@ -5,6 +5,7 @@
 
 body {
   color: var(--foreground);
+  background: var(--background);
   font-family: Manrope, "Playfair Display";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
