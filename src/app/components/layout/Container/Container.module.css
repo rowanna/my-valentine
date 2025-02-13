@@ -5,6 +5,7 @@
   overflow: hidden;
   margin: 0 auto;
   min-width: 380px;
+  max-width: 900px;
 }
 .container {
   /* background: var(--background); */
