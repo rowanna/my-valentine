@@ -6,6 +6,7 @@ const urlArr = [
   "/selectTexture",
   "/selectTopping",
   "/selectWrap",
+  "/result",
 ];
 
 export function middleware(req) {
