@@ -1,7 +1,12 @@
+"use client";
 import Link from "next/link";
 import styles from "./MainComponent.module.css";
+import { useEffect } from "react";
 
 export default function MainComponent() {
+  useEffect(() => {
+    localStorage.removeItem("selectedChocolateData");
+  }, []);
   return (
     <>
       <h2 className={styles.mainTitle}>

@@ -26,8 +26,9 @@ export const metadata = {
   },
   openGraph: {
     title: "My Rocher",
-    description: "웹 퍼블리셔 나원지의 포트폴리오 사이트입니다.",
-    images: "/public/favicon.png",
+    description:
+      "나만의 커스텀 로쉐을 만들고 그 분을 향한 마음을 테스트해보세요.",
+    images: "https://my-valentine-pied.vercel.app/favicon.png",
   },
 };
 
