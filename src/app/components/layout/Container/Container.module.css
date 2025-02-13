@@ -1,6 +1,10 @@
 .section {
   position: relative;
   overflow: hidden;
+  width: 60%;
+  overflow: hidden;
+  margin: 0 auto;
+  min-width: 380px;
 }
 .container {
   /* background: var(--background); */
