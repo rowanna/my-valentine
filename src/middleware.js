@@ -22,5 +22,12 @@ export function middleware(req) {
 
 // middleware가 적용될 경로 설정
 export const config = {
-  matcher: urlArr, // 특정 경로만 감시 (와일드카드 가능: '/blocked/:path*')
+  matcher: [
+    "/selectType",
+    "/selectShape",
+    "/selectTexture",
+    "/selectTopping",
+    "/selectWrap",
+    "/result",
+  ], // 특정 경로만 감시 (와일드카드 가능: '/blocked/:path*')
 };
