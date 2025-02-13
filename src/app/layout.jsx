@@ -27,7 +27,7 @@ export const metadata = {
   openGraph: {
     title: "My Rocher",
     description: "웹 퍼블리셔 나원지의 포트폴리오 사이트입니다.",
-    images: "https://my-valentine-pied.vercel.app/favicon.png",
+    images: "/public/favicon.png",
   },
 };
 
