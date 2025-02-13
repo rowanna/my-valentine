@@ -42,6 +42,25 @@
   opacity: 0;
 }
 
+.title {
+  position: relative;
+  margin-top: 7rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: url("../../../public/star.png") no-repeat;
+}
+.desc {
+  margin: 5rem 0;
+  line-height: 1.5rem;
+}
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);

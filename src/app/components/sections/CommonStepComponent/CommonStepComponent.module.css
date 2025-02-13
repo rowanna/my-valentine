@@ -1,6 +1,6 @@
 .title {
   position: relative;
-  margin-top: 9rem;
+  margin-top: 7rem;
   font-size: 2.5rem;
   font-weight: 900;
 }
@@ -16,7 +16,7 @@
 
 .desc {
   font-size: 1.1rem;
-  margin: 4rem 0;
+  margin: 3rem 0;
   line-height: 2rem;
 }
 .form {
@@ -42,8 +42,7 @@
 .btnWrap {
   display: flex;
   justify-content: space-between;
-  /* gap: 50px; */
-  margin: 10rem 0;
+  margin: 5rem 0;
 }
 .nextStepBtn {
   display: inline-block;
@@ -89,19 +88,14 @@
 .nextStepBtn button:hover::after {
   transform: translate(0, 0);
 }
-/* .form input; */
 
 @media (max-width: 510px) {
-  .form {
-    flex-direction: column;
-    justify-content: center;
-  }
   .form label {
     justify-content: center;
     align-items: center;
   }
   .form input {
-    width: 80%;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
 }

@@ -43,8 +43,8 @@ export default function ResultPage() {
   return (
     <>
       <Layout>
-        <h3>결과</h3>
-        <p>{resultDesc}</p>
+        <h3 className={styles.title}>결과</h3>
+        <p className={styles.desc}>{resultDesc}</p>
       </Layout>
       <div
         ref={LoadingRef}

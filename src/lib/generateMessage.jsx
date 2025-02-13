@@ -20,7 +20,7 @@ export default function generateChocolateMessage({
   const wrapData = wrapTypes.find((el) => el.key === wrap);
 
   return `
-    당신이 선택한 ${typeData.name}은(는) ${typeData.meaning}
+    당신이 선택한 ${typeData.name}의 의미는 ${typeData.meaning}
     ${textureData.name} 질감은 ${textureData.meaning}
     ${shapeData.name}은 ${shapeData.meaning}
     ${toppingData.name} 토핑은 ${toppingData.meaning}
