@@ -16,10 +16,10 @@ export default function ResultPage() {
 
     setTimeout(() => {
       setShowLoading(() => false);
-    }, 3000);
+    }, 1000);
     setTimeout(() => {
       LoadingRef.current.style.display = "none";
-    }, 5000);
+    }, 3000);
   };
   useEffect(() => {
     const requiredKeys = ["type", "texture", "shape", "topping", "wrap"];

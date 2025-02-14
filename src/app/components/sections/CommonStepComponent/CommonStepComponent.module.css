@@ -88,6 +88,23 @@
 .nextStepBtn button:hover::after {
   transform: translate(0, 0);
 }
+.homeBtn button {
+  background-color: var(--foreground);
+  border: 1px solid var(--foreground);
+  color: var(--background);
+  font-weight: 700;
+}
+
+.homeBtn button::after {
+  background-color: var(--background);
+}
+
+.homeBtn button:hover {
+  color: var(--foreground);
+  cursor: pointer;
+  transform: scale(1.05);
+  will-change: transform;
+}
 
 .toast {
   position: fixed;

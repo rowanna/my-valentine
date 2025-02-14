@@ -3,7 +3,6 @@ import CommonStepComponent from "@/app/components/sections/CommonStepComponent/C
 import { chocolateTextures } from "@/data/chocolateData";
 
 export default function SelectTexturePage() {
-  const selectedType = "다크";
   return (
     <>
       <Layout>
@@ -13,8 +12,8 @@ export default function SelectTexturePage() {
           nextUrl={"selectShape"}
           type={"texture"}
         >
-          {selectedType}초콜릿으로 고르셨군요! <br />
-          이제 어떤 질감으로 만들건지 생각해봐요.
+          3가지 텍스처가 있어요.
+          <br /> 이제 어떤 질감으로 만들건지 생각해봐요.
         </CommonStepComponent>
       </Layout>
     </>

@@ -43,7 +43,6 @@ export default function CommonStepComponent({
     const storedData = localStorage.getItem("selectedChocolateData");
     if (storedData) {
       setPrevLocalStorageData(JSON.parse(storedData));
-      console.log(JSON.parse(storedData), "=======");
     }
   }, []);
   return (
@@ -67,8 +66,8 @@ export default function CommonStepComponent({
       </form>
 
       <div className={styles.btnWrap}>
-        <a className={styles.nextStepBtn}>
-          <button onClick={() => router.back()}>Go Previous</button>
+        <a className={`${styles.nextStepBtn} ${styles.homeBtn}`}>
+          <button onClick={() => router.push("/")}>Go HOME</button>
         </a>
         <a
           onClick={(e) => clickNextStepBtn(e, nextUrl)}
