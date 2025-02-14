@@ -8,12 +8,13 @@ export default function SelectTexturePage() {
     <>
       <Layout>
         <CommonStepComponent
-          title={"초콜릿 질감 선택"}
+          title={"초콜릿 질감"}
           selectData={chocolateTextures}
           nextUrl={"selectShape"}
+          type={"texture"}
         >
           {selectedType}초콜릿으로 고르셨군요! <br />
-          이제 어떤 질감으로 만들어 선물할건지 생각해봐요.
+          이제 어떤 질감으로 만들건지 생각해봐요.
         </CommonStepComponent>
       </Layout>
     </>

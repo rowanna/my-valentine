@@ -7,13 +7,14 @@ export default function SelectToppingPage() {
     <>
       <Layout>
         <CommonStepComponent
-          title={"초콜릿 토핑 선택"}
+          title={"초콜릿 토핑"}
           selectData={chocolateToppings}
           nextUrl={"selectWrap"}
+          type={"topping"}
         >
           초콜릿 만드는 마지막 단계에요!
           <br />
-          어떤 토핑을 올려서 그 분을 즐겁게 해줄 건가요?🤗
+          어떤 토핑을 올려서 나를 즐겁게 할 건가요?🤗
         </CommonStepComponent>
       </Layout>
     </>

@@ -9,10 +9,10 @@
   box-shadow: 1px -1px 12px #00000040;
 }
 .container {
-  /* background: var(--background); */
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container::before {

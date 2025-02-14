@@ -9,10 +9,12 @@ export default function CommonStepComponent({
   selectData,
   nextUrl,
   children,
+  type,
 }) {
   const [selectedRadioValue, setSelectedRadioValue] = useState("");
   const [prevLocalStorageData, setPrevLocalStorageData] = useState({});
   const [selectedData, setSelectedData] = useState({});
+  const [showToast, setShowToast] = useState(false);
   const router = useRouter();
   const selectInput = (e, data) => {
     setSelectedRadioValue(() => e.target.value);
@@ -20,24 +22,33 @@ export default function CommonStepComponent({
     setSelectedData((prev) => ({ ...prev, ...data }));
   };
 
-  const clickNextStepBtn = (e) => {
+  const clickNextStepBtn = (e, nextUrl) => {
+    if (Object.keys(selectedData).length === 0) {
+      setShowToast(() => true);
+      setTimeout(() => {
+        setShowToast(() => false);
+      }, 1500);
+      return;
+    }
     localStorage.setItem(
       "selectedChocolateData",
       JSON.stringify({
         ...prevLocalStorageData,
-        [selectedData.type]: selectedData.key,
+        [type]: selectedData.key,
       })
     );
+    router.push(nextUrl);
   };
   useEffect(() => {
     const storedData = localStorage.getItem("selectedChocolateData");
     if (storedData) {
       setPrevLocalStorageData(JSON.parse(storedData));
+      console.log(JSON.parse(storedData), "=======");
     }
   }, []);
   return (
     <>
-      <h3 className={styles.title}>{title}</h3>
+      <h3 className={styles.title}>{title} 선택</h3>
       <p className={styles.desc}>{children}</p>
 
       <form className={styles.form}>
@@ -59,13 +70,15 @@ export default function CommonStepComponent({
         <a className={styles.nextStepBtn}>
           <button onClick={() => router.back()}>Go Previous</button>
         </a>
-        <Link
-          onClick={() => clickNextStepBtn()}
+        <a
+          onClick={(e) => clickNextStepBtn(e, nextUrl)}
           className={styles.nextStepBtn}
-          href={nextUrl}
         >
           <button>Go Next</button>
-        </Link>
+        </a>
+      </div>
+      <div className={`${styles.toast} ${showToast ? styles.show : ""}`}>
+        {title}을 선택해 주세요.
       </div>
     </>
   );

@@ -6,9 +6,10 @@ export default function SelectShapePage() {
     <>
       <Layout>
         <CommonStepComponent
-          title={"초콜릿 모양 선택"}
+          title={"초콜릿 모양"}
           selectData={chocolateShapes}
           nextUrl={"selectTopping"}
+          type={"shape"}
         >
           오.... 이제 모양을 선택해봐요 <br />세 가지 모양 중에서 선택할 수
           있어요.

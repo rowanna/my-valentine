@@ -7,13 +7,14 @@ export default function SelectWrapPage() {
     <>
       <Layout>
         <CommonStepComponent
-          title={"포장 선택"}
+          title={"포장"}
           selectData={wrapTypes}
           nextUrl={"result"}
+          type={"wrap"}
         >
           찐 최종 마지막!
           <br />
-          어떻게 포장해서 마음을 전할까요?
+          포장한다면 어떻게 포장하실건가요?
         </CommonStepComponent>
       </Layout>
     </>

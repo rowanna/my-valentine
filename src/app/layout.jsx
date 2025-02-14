@@ -17,7 +17,7 @@ const notosanskr = Noto_Sans_KR({
 
 export const metadata = {
   title: "My Rocher",
-  description: "나만의 커스텀 로쉐을 만들고 그 분을 향한 마음을 테스트해보세요",
+  description: "나만의 커스텀 로쉐을 만들고 내 성향을 테스트 해보세요.",
   keywords: "my rocher, 마이로쉐, 발렌타인데이, 커스텀 초콜릿",
   icons: {
     icon: "https://my-valentine-pied.vercel.app/favicon.png",
@@ -26,8 +26,7 @@ export const metadata = {
   },
   openGraph: {
     title: "My Rocher",
-    description:
-      "나만의 커스텀 로쉐을 만들고 그 분을 향한 마음을 테스트해보세요.",
+    description: "나만의 커스텀 로쉐을 만들고 내 성향을 테스트 해보세요..",
     images: "https://my-valentine-pied.vercel.app/favicon.png",
   },
 };
