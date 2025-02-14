@@ -112,7 +112,7 @@
   transform: translate(-50%, -100%);
 }
 
-@media (max-width: 510px) {
+@media (max-width: 800px) {
   .form label {
     justify-content: center;
     align-items: center;
